@@ -11,7 +11,7 @@ function dataset.getFromData(set, var)
         response = set[var]
     else
         response = false
-        print(var..' is not found in the DataSet!')
+        print(var..' is not found in the DataSet provided, please check your json file for further assistance.')
     end
     return response
 end

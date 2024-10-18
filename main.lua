@@ -7,6 +7,10 @@ function love.load()
     title = dataset.getFromData(gameDS,'title')
     devMode = dataset.getFromData(gameDS,'devMode')
     love.window.setTitle(title..' ('..version..')')
+
+    love.mouse.setCursor(love.mouse.newCursor("assets/gfx/cursor.png", 0, 0))
+
+    -- devmode
     love.window.setTitle(love.window.getTitle()..' [DEVELOPER BUILD]')
 end
 
