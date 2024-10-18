@@ -1,0 +1,15 @@
+[
+    {
+        "beds":"1",
+        "build_time":20,
+        "costType":"coins",
+        "cost_coins":200,
+        "cost_diamonds":0,
+        "muppet_id":50,
+        "name":"MUPPET_ANIMAL",
+        "tier":"1",
+        "xp":50,
+        "anim":"muppet_animal",
+        "stages":[1]
+    }
+]
