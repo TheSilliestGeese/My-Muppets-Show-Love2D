@@ -1,10 +1,13 @@
 dataset = require 'assets/scripts/dataset'
 roomy = require 'assets/scripts/roomy'
+
 gameDS = {}
+
+local manager = roomy.new()
 
 function love.load()
     print("loaded")
-    
+
     gameDS = dataset.parse('game')
     version = dataset.getFromData(gameDS,'ver')
     title = dataset.getFromData(gameDS,'title')
@@ -19,4 +22,8 @@ function love.load()
         print("user is in devmode!")
         love.window.setTitle(love.window.getTitle()..' ('..version..') [DEVELOPER BUILD]')
     end
+    a = require "assets/scripts/scenes/login_screen"
+    manager:hook()
+    manager:enter(a)
+
 end
