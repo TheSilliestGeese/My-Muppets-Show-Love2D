@@ -1,0 +1,8 @@
+{
+    "coins":1200,
+    "diamonds":17,
+    "food":0,
+    "stages_unlocked":[1],
+    "tutorial_complete":false,
+    "tutorial_phase":1
+}
